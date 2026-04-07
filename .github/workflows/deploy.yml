@@ -16,6 +16,11 @@ on:
   # Permite rodar manualmente pela interface do GitHub (botao "Run workflow")
   workflow_dispatch:
 
+# Forca actions JavaScript a rodarem em Node 24 desde ja
+# (ajuda a antecipar compatibilidade com a mudanca do GitHub)
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 # Evita duas publicacoes ao mesmo tempo para o mesmo grupo
 concurrency:
   # Nome do grupo de concorrencia (pode ser qualquer texto)
@@ -34,7 +39,7 @@ jobs:
     steps:
       # Baixa os arquivos do seu repositorio para dentro da maquina virtual
       - name: Baixar codigo do repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # Instala e prepara o PHP para podermos validar os arquivos
       - name: Configurar PHP

@@ -57,8 +57,8 @@ Tambem e possivel disparar manualmente em **Actions > Deploy PHP site to Infinit
 ## 6) Dicas
 
 - Trabalhar sempre na branch `main` (ou ajustar o workflow para outra branch).
-- Nao commitar senhas no repositorio.
+- Não commitar senhas no repositorio.
 - Se der erro de autenticacao FTP, revisar os `Secrets`.
-- Se o site nao atualizar, verificar no log do GitHub Actions se o upload foi concluido.
+- Se o site não atualizar, verificar no log do GitHub Actions se o upload foi concluido.
 
 

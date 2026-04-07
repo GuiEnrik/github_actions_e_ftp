@@ -5,6 +5,6 @@
   <title>Site em PHP</title>
 </head>
 <body>
-    <h1><?php echo "Olá, mundo!" ?></h1>
+    <?php echo "<h1>Olá, mundo!</h1>" ?>
 </body>
 </html>
